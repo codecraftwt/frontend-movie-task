@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: #093545 !important;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #093545 !important;
+
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background: #093545;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.h1 {
+  font-size: 64px !important;
+  color: #fff !important;
+}
+
+.inputTag {
+  background: #224957 !important;
+  width: 300px !important;
+  height: 45px !important;
+  border-radius: 10px !important;
+  color: #fff !important;
+  border-color: #224957 !important;
+}
+
+.inputTag::placeholder {
+  color: #fff !important;
+}
+
+input::placeholder {
+  color: #fff !important;
+}
+
+.checkbox {
+  border-color: #224957 !important;
+}
+
+.form-check-input {
+  background-color: unset !important;
+}
+
+.remeber {
+  color: #fff !important;
+}
+
+.loginBtn {
+  background: #2BD17E !important;
+  width: 300px !important;
+  height: 54px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #224957 !important;
+  outline: 0;
+  box-shadow: unset !important;
+}
+
+.is-invalid {
+  border: 1px solid #EB5757 !important
+}
+
+/* empty state page */
+.emptyStateHeading {
+  font-size: 48px !important;
+  font-family: Montserrat !important;
+  color: #fff !important;
+  text-wrap: auto;
+}
+
+.addMovie {
+  background: #2BD17E !important;
+  width: 202px !important;
+  height: 56px !important;
+  font-family: Montserrat !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 24px;
+  color: #fff !important;
+}
+
+/* create new movie */
+.min-vw-98 {
+  min-width: 98vw !important;
+}
+
+.card {
+  width: 282px;
+  height: 504px;
+  border-radius: 12px !important;
+  background: #092C39 !important;
+  padding: 5px;
+  border: unset !important
+}
+
+.card:hover {
+  background-color: #1e424e !important;
+}
+
+/* pagination */
+.custom-pagination .pagination-item {
+  background-color: #092C39;
+  border-radius: 8px;
+  margin: 0 5px;
+  color: #fff;
+}
+
+.custom-pagination .pagination-prev,
+.custom-pagination .pagination-next {
+  background-color: transparent;
+  color: #14B0F2;
+}
+
+.custom-pagination .pagination-prev:hover,
+.custom-pagination .pagination-next:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.custom-pagination .pagination-item {
+  background-color: #092C39;
+  border-radius: 8px;
+  margin: 0 5px;
+  color: #fff;
+}
+
+.custom-pagination .pagination-prev,
+.custom-pagination .pagination-next {
+  background-color: transparent;
+  color: #14B0F2;
+}
+
+.custom-pagination .pagination-prev:hover,
+.custom-pagination .pagination-next:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.page-item:first-child .page-link {
+  background-color: unset !important;
+}
+
+.custom-pagination .pagination-item.active {
+  background-color: #2BD17E !important;
+  color: #fff;
+}
+
+.active>.page-link {
+  z-index: 3;
+  background-color: #2BD17E !important;
+}
+.page-link{
+  background-color: #092C39 !important;
+  border: unset !important;
+  border-radius: 4px !important;
+  color: #fff !important;
+}
+
+.page-item:last-child .page-link {
+  background-color: unset !important;
+}
+
+.custome-h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  font-family: montserrat;
+  color: #fff;
+}
+
+.logoutlabel {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: Montserrat;
+  margin-right: 20px;
+  display: block;
+}
+
+.create-movie-header {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 600;
+  padding-left: 154px !important;
+}
+
+.drag-img-section {
+  border: 2px dotted rgb(108, 117, 125);
+  width: 473px;
+  height: 504px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #224957;
+}
+
+.movie-title {
+  width: 362px !important;
+  height: 45px;
+  color: #fff !important;
+  background: #224957 !important;
+  border-color: #224957 !important;
+  border-radius: 10px !important;
+}
+
+.publish-year {
+  width: 216px !important;
+  height: 45px;
+  color: #fff !important;
+  background: #224957 !important;
+  border-color: #224957 !important;
+  border-radius: 10px !important;
+}
+.reverse{
+  display: flex;
+}
+.custome-btns{
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 180px !important;
+    height: 334px !important;
+  }
+
+  .custome-h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    font-family: montserrat;
+    color: #fff;
+  }
+
+  .logoutlabel {
+    display: none;
+  }
+
+  .addMovie {
+    width: 97% !important;
+  }
+
+  .create-movie-header {
+    padding-left: unset !important;
+    font-size: 32px !important;
+  }
+
+  .drag-img-section {
+    width: 380px;
+    height: 372px;
+  }
+  .movie-title{
+    width: 100% !important;
+  }
+  .publish-year{
+    width: 100% !important;
+  }
+  .reverse{
+    flex-direction: column-reverse;
+  }
+  .custome-btns{
+    display: block;
+    position: absolute;
+    bottom: -2px;
+  }
+}
